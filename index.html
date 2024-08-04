@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARUNIA HOME SERVICE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff;
+            color: #333;
+        }
+        header {
+            background-color: #0099cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 28px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007399;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            padding: 15px 25px;
+            display: block;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        nav a:hover {
+            background-color: #005f73;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .fancy-title {
+            text-align: center;
+            font-size: 36px;
+            color: #0099cc;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-right: 0.15em solid #0099cc;
+            white-space: nowrap;
+            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #0099cc; }
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .carousel {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .testimonial {
+            margin-bottom: 15px;
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .testimonial span {
+            font-weight: bold;
+        }
+        .appointment-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .appointment-form input, .appointment-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .appointment-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0099cc;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .appointment-form button:hover {
+            background-color: #007399;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        KARUNIA HOME SERVICE
+    </header>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h1 class="fancy-title">Selamat Datang di KARUNIA HOME SERVICE</h1>
+            <div class="carousel">
+                <div class="slides">
+                    <img src="https://www.tire.ae/files/uploads/close-up-hand-auto-mechanic-using-measuring-manifold-gauge-check-refrigerant-filling-car-air-conditioner-fix-checking-repair-service-support-maintenance-car-insurance.jpg" alt="Service 1">
+            </div>
+        </section>
+        <section id="about" class="section">
+            <h1 class="fancy-title">Tentang Kami</h1>
+            <p style="text-align: center">Kami dari KARUNIA HOME SERVICE menerima pengerjaan perawatan, perbaikan, dan pembersihan AC Mobil dan Alat Berat.<br> Karyawan kami sangat berpengalaman dan masih eksis hingga sekarang untuk pekerjaaan AC Mobil dan Alat Berat.<br> Dengan hasil yang akan membuat pengalaman berkendara/bekerja Anda semakin nyaman.<br> Untuk harga jasa kami beri harga paling murah untuk kualitas terbaik.<br> AC Mobil/Alat Berat Anda yang semula rusak/tidak berfungsi semestinya, akan kembali seperti ketika Mobil/Alat Berat Anda pertama kali beli.<br> Untuk sementara layanan kami hanya tersedia di Balikpapan, Kalimantan Timur.</p>
+        </section>
+        <section id="services" class="section">
+            <h1 class="fancy-title">Layanan Kami</h1>
+            <p style="text-align: center"><i class="fas fa-broom"></i> Pembersihan</p>
+            <p style="text-align: center"><i class="fas fa-tools"></i> Pemeliharaan</p>
+            <p style="text-align: center"><i class="fas fa-hammer"></i> Perbaikan</p>
+        </section>
+        <section id="testimonials" class="section">
+            <h1 class="fancy-title">Testimoni</h1>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Layanan yang luar biasa dan cepat! Sangat merekomendasikan."</p>
+                    <span>- Budi</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Staf sangat profesional dan ramah. Mobil saya terlihat baru lagi!"</p>
+                    <span>- Siti</span>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h1 class="fancy-title">Hubungi Kami</h1>
+            <p style="text-align: center">Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami di +62 838-8313-191!</p>
+            <div class="appointment-form">
+                <h2>Pesan Janji Temu</h2>
+                <form action="https://formspree.io/f/xanwopld" method="post">
+                    <input type="text" name="name" placeholder="Nama Anda" required>
+                    <input type="email" name="email" placeholder="Email Anda" required>
+                    <input type="tel" name="phone" placeholder="Nomor Telepon Anda" required pattern="^\d{10,15}$">
+                    <textarea name="message" placeholder="Pesan Anda" rows="4" required></textarea>
+                    <button type="submit">Pesan Sekarang</button>
+                </form>
+            </div>
+            <h2>Lokasi Kami</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255289.7814977589!2d116.70283041640627!3d-1.2274247000000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147002cbc1057%3A0xbad50a916bd16b56!2sKARUNIA%20CAR%20AC%20HOME%20SERVICE!5e0!3m2!1sen!2sid!4v1722696246234!5m2!1sen!2sid"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides img');
+        
+        function moveSlides(n) {
+            currentSlide = (currentSlide + n + slides.length)
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides img');
+        
+        function moveSlides(n) {
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            document.querySelector('.slides').style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function typingEffect(element, textArray, delay = 2000) {
+            let currentTextIndex = 0;
+            let currentCharIndex = 0;
+            let isDeleting = false;
+
+            function type() {
+                let currentText = textArray[currentTextIndex];
+                element.innerHTML = isDeleting
+                    ? currentText.substring(0, currentCharIndex--)
+                    : currentText.substring(0, currentCharIndex++);
+
+                if (!isDeleting && currentCharIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(type, delay);
+                } else if (isDeleting && currentCharIndex === 0) {
+                    isDeleting = false;
+                    currentTextIndex = (currentTextIndex + 1) % textArray.length;
+                    setTimeout(type, 500);
+                } else {
+                    setTimeout(type, isDeleting ? 50 : 100);
+                }
+            }
+
+            type();
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const headings = document.querySelectorAll('.fancy-title');
+            headings.forEach(heading => {
+                const textArray = heading.innerText.split('|');
+                heading.innerText = '';
+                typingEffect(heading, textArray);
+            });
+        });
+    </script>
+</body>
+</html>
