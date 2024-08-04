@@ -142,6 +142,31 @@
         }
         .appointment-form button:hover {
             background-color: #007399;
+            }
+        @media (max-width: 480px) {
+            header {
+                font-size: 24px;
+                padding: 15px 0;
+            }
+            .fancy-title {
+                font-size: 20px;
+            }
+            nav a {
+                padding: 8px 10px;
+                margin: 2px;
+                font-size: 12px;
+            }
+            .appointment-form {
+                padding: 10px;
+            }
+            .appointment-form input, .appointment-form textarea {
+                width: calc(100% - 12px);
+                padding: 6px;
+            }
+            .appointment-form button {
+                padding: 6px;
+                font-size: 12px;
+            }
         }
     </style>
 </head>
